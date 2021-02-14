@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activityResidentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainframebackground"
+    tools:context=".resident.ResidentMainActivity">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/residentNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="0dp"
+        android:background="#88D16F6F"
+        app:menu="@menu/navigation_bar" />
+
+    <FrameLayout
+
+        android:id="@+id/residentMainFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/residentNavigation"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="0dp">
+
+        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/profileLayout"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            >
+            <include layout="@layout/profile_closed"
+                android:visibility="invisible"/>
+
+            <include layout="@layout/profile_opened_edit"
+                android:visibility="invisible"/>
+
+            <include layout="@layout/profile_opened_view"
+                android:visibility="invisible"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/residentBalanceLayout"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="235dp"
+            android:background="@drawable/profile_open_view_border"
+            android:layout_height="40dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="10dp"
+                app:srcCompat="@drawable/coins" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="right|center_vertical"
+                app:srcCompat="@drawable/coins" />
+
+            <TextView
+                android:id="@+id/residentBalanceLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/happy_monkey"
+                android:layout_gravity="center"
+                android:layout_marginRight="30dp"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:text="Your monthly balance is: " />
+
+            <TextView
+                android:id="@+id/residentBalanceView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/happy_monkey"
+                android:layout_gravity="center"
+                android:layout_marginLeft="120dp"
+                android:textAlignment="center"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:text="20.0$" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="80dp"
+            android:layout_gravity="bottom"
+            android:layout_above="@+id/residentBalanceLayout"
+            android:background="@drawable/profile_open_view_border"
+            android:layout_height="235dp">
+
+            <TextView
+                android:id="@+id/residentHighlightedDeliveryTitleLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/happy_monkey"
+                android:text="Highlighted Delivery"
+                android:textAlignment="center"
+                android:textColor="#323536"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/residentHighlightedDeliveryDateLabel"
+                android:layout_width="120dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="60dp"
+                android:fontFamily="@font/happy_monkey"
+                android:text="Order Time:"
+                android:textAlignment="textEnd"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/residentHighlightedDeliveryDateView"
+                android:layout_width="200dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="60dp"
+                android:fontFamily="@font/happy_monkey"
+                android:text=""
+                android:textAlignment="textEnd"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/residentHighlightedDeliveryStatusLabel"
+                android:layout_width="120dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="85dp"
+                android:fontFamily="@font/happy_monkey"
+                android:text="Status:"
+                android:textAlignment="textEnd"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/residentHighlightedDeliveryStatusView"
+                android:layout_width="200dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="85dp"
+                android:fontFamily="@font/happy_monkey"
+                android:text=""
+                android:textAlignment="textEnd"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/residentHighlightedDeliveryCost"
+                android:layout_width="120dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="110dp"
+                android:fontFamily="@font/happy_monkey"
+                android:text="Cost:"
+                android:textAlignment="textEnd"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/residentHighlightedDeliveryCostView"
+                android:layout_width="200dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="110dp"
+                android:fontFamily="@font/happy_monkey"
+                android:text=""
+                android:textAlignment="textEnd"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/residentHighlightedDelivery"
+                android:layout_width="120dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="135dp"
+                android:fontFamily="@font/happy_monkey"
+                android:text="Content:"
+                android:textAlignment="textEnd"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/residentHighlightedDeliveryContentView"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="135dp"
+                android:fontFamily="@font/happy_monkey"
+                android:inputType="textMultiLine"
+                android:text=""
+                android:gravity="top|right"
+                android:minLines="4"
+                android:lines="4"
+                android:maxLines="4"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                app:srcCompat="@drawable/shopping_cart" />
+
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/garbageFlagLabel"
+            android:layout_width="240dp"
+            android:layout_height="36dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="40dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/happy_monkey"
+            android:text="Garbage service: "
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/garbageCheckBoxResident"
+            android:layout_width="43dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="260dp"
+            android:layout_marginBottom="23dp"
+            android:scaleX="1.20"
+            android:scaleY="1.20"
+            android:textColor="#000000"
+            android:textColorHighlight="#000000"
+            android:textColorHint="#000000"
+            android:textColorLink="#000000"
+            android:textCursorDrawable="@drawable/confirm" />
+
+
+    </FrameLayout>
+
+
+</RelativeLayout>

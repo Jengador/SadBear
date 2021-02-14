@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/barMainFrame"
+        android:icon="@drawable/navigationbarmainframeicon"
+        android:title="MainFrame"/>
+
+    <item
+        android:id="@+id/barSupportFrame"
+        android:icon="@drawable/navigationbarsupportframeicon"
+        android:title="SupportFrame"/>
+
+    <item
+        android:id="@+id/barHistoryFrame"
+        android:icon="@drawable/navigationbarhistoryframeicon"
+        android:title="HistoryFrame"/>
+
+    <item
+        android:id="@+id/barDeliveryFrame"
+        android:icon="@drawable/navigationbardeliveryframeicon"
+        android:title="DeliveryFrame"/>
+
+
+</menu>

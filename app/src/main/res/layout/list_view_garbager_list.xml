@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55dip"
+    android:layout_marginTop="109dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/garbagerDoorNoView"
+            android:paddingTop="8dp"
+            android:paddingBottom="5dp"
+            android:justificationMode="inter_word"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:background="#715656"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:fontFamily="@font/happy_monkey"
+            android:textAlignment="center"
+            android:lineSpacingExtra="4dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/garbagerNameView"
+            android:paddingTop="8dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="15dp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="#EDEDED"
+            android:textColor="#252525"
+            android:textSize="18dp"
+            android:fontFamily="@font/happy_monkey"
+            android:textAlignment="center"
+            android:paddingRight="4dp"
+            android:lineSpacingExtra="4dp"
+            />
+
+        <Button
+            android:id="@+id/garbagerUnselectButton"
+            android:layout_width="wrap_content"
+            android:gravity="right"
+            android:layout_height="match_parent"
+            android:text="Collect"
+            android:layout_marginLeft="5dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#D9FFFFFF"
+        >
+
+        <TextView
+            android:paddingTop="8dp"
+            android:paddingBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:layout_marginLeft="10dp"
+            android:textSize="18dp"
+            android:fontFamily="@font/happy_monkey"
+            android:text="TO: "
+            android:textAlignment="textStart"
+            android:lineSpacingExtra="4dp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/residentHistoryToView"
+            android:paddingTop="8dp"
+            android:paddingBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:textAlignment="textEnd"
+            android:fontFamily="@font/happy_monkey"
+            android:lineSpacingExtra="4dp"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#D9C5C1C1"
+        >
+        <TextView
+            android:paddingTop="8dp"
+            android:paddingBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:layout_marginLeft="10dp"
+            android:textSize="18dp"
+            android:fontFamily="@font/happy_monkey"
+            android:text="TYPE: "
+            android:textAlignment="textStart"
+            android:lineSpacingExtra="4dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/residentHistoryTypeView"
+            android:paddingTop="8dp"
+            android:paddingBottom="5dp"
+            android:justificationMode="inter_word"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:fontFamily="@font/happy_monkey"
+            android:textAlignment="textEnd"
+            android:lineSpacingExtra="4dp"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#D9FFFFFF"
+        >
+        <TextView
+            android:paddingTop="8dp"
+            android:paddingBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:layout_marginLeft="10dp"
+            android:textSize="18dp"
+            android:fontFamily="@font/happy_monkey"
+            android:text="SEND TIME: "
+            android:textAlignment="textStart"
+            android:lineSpacingExtra="4dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/residentHistorySendTimeView"
+            android:paddingTop="8dp"
+            android:paddingBottom="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:fontFamily="@font/happy_monkey"
+            android:textAlignment="textEnd"
+            android:lineSpacingExtra="4dp"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#D9C5C1C1"
+        >
+
+        <TextView
+            android:paddingTop="8dp"
+            android:paddingBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:layout_marginLeft="10dp"
+            android:textSize="18dp"
+            android:fontFamily="@font/happy_monkey"
+            android:text="DESCRIPTION: "
+            android:textAlignment="textStart"
+            android:lineSpacingExtra="4dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/residentHistoryDetailView"
+            android:paddingTop="8dp"
+            android:paddingBottom="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:justificationMode="inter_word"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="textEnd"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:fontFamily="@font/happy_monkey"
+            android:lineSpacingExtra="4dp"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#D9FFFFFF"
+        >
+
+        <TextView
+            android:paddingTop="8dp"
+            android:paddingBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:layout_marginLeft="10dp"
+            android:textSize="18dp"
+            android:fontFamily="@font/happy_monkey"
+            android:text="RESPONSE TIME: "
+            android:textAlignment="textStart"
+            android:lineSpacingExtra="4dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/residentHistoryResultTimeView"
+            android:paddingTop="8dp"
+            android:paddingBottom="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:fontFamily="@font/happy_monkey"
+            android:textAlignment="textEnd"
+            android:lineSpacingExtra="4dp"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#D9C5C1C1"
+        >
+
+        <TextView
+            android:paddingTop="8dp"
+            android:paddingBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:layout_marginLeft="10dp"
+            android:textSize="18dp"
+            android:fontFamily="@font/happy_monkey"
+            android:text="RESPONSE: "
+            android:textAlignment="textStart"
+            android:lineSpacingExtra="4dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/residentHistoryResponseView"
+            android:paddingTop="8dp"
+            android:paddingBottom="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:justificationMode="inter_word"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:fontFamily="@font/happy_monkey"
+            android:textAlignment="textEnd"
+            android:lineSpacingExtra="4dp"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#554848"
+        android:textSize="15dp"
+        android:fontFamily="@font/happy_monkey"
+        android:textAlignment="textEnd"
+        android:lineSpacingExtra="4dp"
+        android:textStyle="bold"
+        />
+
+</LinearLayout>

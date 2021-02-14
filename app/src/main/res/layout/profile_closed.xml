@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/residentProfileFrameLayoutClosed"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainFrame_ProfileLayoutBackground_Closed"
+    >
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:fontFamily="@font/happy_monkey"
+        android:gravity="center|center_horizontal"
+        android:text="Looks like you haven't initialized your profile.\nClick to initialize."
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24dp" />
+</FrameLayout>

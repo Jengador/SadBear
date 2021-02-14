@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainframebackground"
+    tools:context=".concierge.ConciergeSupportActivity">
+
+    <FrameLayout
+        android:id="@+id/akaslals"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/conciergeNavigation"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="0dp">
+
+        <ExpandableListView
+            android:id="@+id/conciergeSupportFrameExpendable"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"/>
+
+    </FrameLayout>
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/conciergeNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="0dp"
+        android:background="#88D16F6F"
+        app:menu="@menu/navigation_bar" />
+
+
+</RelativeLayout>

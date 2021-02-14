@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainframebackground"
+    tools:context=".resident.ResidentSupportActivity">
+
+    <FrameLayout
+
+        android:id="@+id/residentSupportFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/residentNavigation"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="0dp">
+
+    <FrameLayout
+        android:id="@+id/newRequest"
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/profile_open_view_border">
+
+        <TextView
+            android:id="@+id/residentSupportNewRequestTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/happy_monkey"
+            android:text="New Request"
+            android:textAlignment="center"
+            android:textColor="#323536"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/residentSupportNewRequestTargetLabel"
+            android:layout_width="120dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="55dp"
+            android:fontFamily="@font/happy_monkey"
+            android:text="Receiver:"
+            android:textAlignment="textEnd"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/residentSupportNewRequestTargetSpinner"
+            android:layout_width="200dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="137dp"
+            android:layout_marginTop="55dp"
+            android:fontFamily="@font/happy_monkey"
+            android:textAlignment="textEnd"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/residentSupportNewRequestTypeLabel"
+            android:layout_width="120dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="85dp"
+            android:fontFamily="@font/happy_monkey"
+            android:text="Issue type:"
+            android:textAlignment="textEnd"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/residentSupportNewRequestTypeSpinner"
+            android:layout_width="200dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="137dp"
+            android:layout_marginTop="85dp"
+            android:fontFamily="@font/happy_monkey"
+            android:textAlignment="textEnd"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/residentSupportNewRequestDescriptionLabel"
+            android:layout_width="120dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="115dp"
+            android:fontFamily="@font/happy_monkey"
+            android:text="Description:"
+            android:textAlignment="textEnd"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/residentSupportNewRequestDescriptionEditText"
+            android:layout_width="200dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="137dp"
+            android:layout_marginTop="115dp"
+            android:fontFamily="@font/happy_monkey"
+            android:inputType="textMultiLine"
+            android:text=""
+            android:gravity="top|left"
+            android:maxLength="100"
+            android:minLines="6"
+            android:lines="6"
+            android:maxLines="6"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/residentSupportNewRequestSubmitButton"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="235dp"
+            app:cardBackgroundColor="#88D16F6F"
+            app:cardCornerRadius="14dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/alef_bold"
+                    android:text="Submit"
+                    android:textColor="#DDFFFFFF"
+                    android:textColorHighlight="@color/cardview_light_background"
+                    android:textColorLink="@color/cardview_light_background"
+                    android:textSize="18dp" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/invalidNewRequestLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="3dp"
+            android:background="#70FFFFFF"
+            android:fontFamily="@font/happy_monkey"
+            android:text="  Description must be at least 10 characters!  "
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/newRequestSentMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:fontFamily="@font/happy_monkey"
+            android:background="#70FFFFFF"
+            android:layout_marginBottom="3dp"
+            android:visibility="invisible"
+            android:text="  Request has been sent!  "
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            app:srcCompat="@drawable/newrequest"
+            android:layout_gravity="right"/>
+
+    </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="bottom"
+            android:layout_above="@+id/newRequest"
+            android:background="@drawable/profile_open_view_border"
+            android:layout_height="280dp">
+
+            <TextView
+                android:id="@+id/residentSupportLatestRequestTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/happy_monkey"
+                android:text="Latest Request"
+                android:textAlignment="center"
+                android:textColor="#323536"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/residentSupportLatestRequestDateLabel"
+                android:layout_width="130dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="60dp"
+                android:fontFamily="@font/happy_monkey"
+                android:text="Last Update:"
+                android:textAlignment="textEnd"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/residentSupportLatestRequestDateView"
+                android:layout_width="220dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="138dp"
+                android:layout_marginTop="60dp"
+                android:fontFamily="@font/happy_monkey"
+                android:textAlignment="textEnd"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/residentSupportLatestRequestReceiverLabel"
+                android:layout_width="120dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="85dp"
+                android:fontFamily="@font/happy_monkey"
+                android:text="Receiver:"
+                android:textAlignment="textEnd"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/residentSupportLatestRequestReceiverView"
+                android:layout_width="220dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="138dp"
+                android:layout_marginTop="85dp"
+                android:fontFamily="@font/happy_monkey"
+                android:textAlignment="textEnd"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/residentSupportLatestRequestStatusLabel"
+                android:layout_width="120dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="110dp"
+                android:fontFamily="@font/happy_monkey"
+                android:text="Status:"
+                android:textAlignment="textEnd"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/residentSupportLatestRequestStatusView"
+                android:layout_width="220dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="138dp"
+                android:layout_marginTop="110dp"
+                android:fontFamily="@font/happy_monkey"
+                android:textAlignment="textEnd"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/residentSupportLatestRequestTypeLabel"
+                android:layout_width="120dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="135dp"
+                android:fontFamily="@font/happy_monkey"
+                android:text="Type:"
+                android:textAlignment="textEnd"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/residentSupportLatestRequestTypeView"
+                android:layout_width="220dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="138dp"
+                android:layout_marginTop="135dp"
+                android:fontFamily="@font/happy_monkey"
+                android:textAlignment="textEnd"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/residentSupportLatestRequestResponseLabel"
+                android:layout_width="120dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="160dp"
+                android:fontFamily="@font/happy_monkey"
+                android:text="Response:"
+                android:textAlignment="textEnd"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/residentSupportLatestRequestResponseDescriptionView"
+                android:layout_width="220dp"
+                android:layout_height="120dp"
+                android:layout_marginLeft="140dp"
+                android:layout_marginTop="165dp"
+                android:fontFamily="@font/happy_monkey"
+                android:gravity="top|right"
+                android:inputType="textMultiLine"
+                android:lines="6"
+                android:maxLength="100"
+                android:maxLines="6"
+                android:minLines="6"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                app:srcCompat="@drawable/request" />
+
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/residentNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="0dp"
+        android:background="#88D16F6F"
+        app:menu="@menu/navigation_bar" />
+
+
+</RelativeLayout>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/residentProfileFrameLayoutOpenedEdit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/profile_open_view_border">
+
+    <!--    android:layout_height="190dp"-->
+    <!--    android:layout_marginLeft="20dp"-->
+    <!--    android:layout_marginTop="20dp"-->
+    <!--    android:layout_marginRight="20dp"-->
+
+    <TextView
+        android:id="@+id/profileNameLabelEdit"
+        android:layout_width="120dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="45dp"
+        android:fontFamily="@font/happy_monkey"
+        android:text="Name:"
+        android:textAlignment="textEnd"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/profileNameEditText"
+        android:layout_width="200dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="137dp"
+        android:layout_marginTop="45dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/happy_monkey"
+        android:inputType="text"
+        android:maxLength="30"
+        android:maxLines="1"
+        android:textAlignment="textEnd"
+        android:textColor="#2D2F31"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/profilePhoneLabelEdit"
+        android:layout_width="120dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="70dp"
+        android:fontFamily="@font/happy_monkey"
+        android:text="Phone:"
+        android:textAlignment="textEnd"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/profilePhoneEditText"
+        android:layout_width="200dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="137dp"
+        android:layout_marginTop="70dp"
+        android:background="@android:color/transparent"
+        android:digits="0123456789+"
+        android:fontFamily="@font/happy_monkey"
+        android:inputType="phone"
+        android:maxLength="10"
+        android:maxLines="1"
+        android:textAlignment="textEnd"
+        android:textColor="#2D2F31"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/profileHometownEditText"
+        android:layout_width="200dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="137dp"
+        android:layout_marginTop="120dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/happy_monkey"
+        android:inputType="text"
+        android:maxLines="1"
+        android:textAlignment="textEnd"
+        android:textColor="#2D2F31"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/profileBirthdateLabelEdit"
+        android:layout_width="120dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="95dp"
+        android:fontFamily="@font/happy_monkey"
+        android:text="Birthdate:"
+        android:textAlignment="textEnd"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spinnerDayBirthdate"
+        android:layout_width="60dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="137dp"
+        android:layout_marginTop="95dp"
+        android:fontFamily="@font/happy_monkey"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:textAlignment="textStart"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Spinner
+
+        android:id="@+id/spinnerMonthBirthdate"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="197dp"
+        android:layout_marginTop="95dp"
+        android:fontFamily="@font/happy_monkey"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:textAlignment="textEnd"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Spinner
+
+        android:id="@+id/spinnerYearBirthdate"
+        android:layout_width="80dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="297dp"
+        android:layout_marginTop="95dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:fontFamily="@font/happy_monkey"
+        android:textAlignment="textStart"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/profileHometownLabelEdit"
+        android:layout_width="120dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="120dp"
+        android:fontFamily="@font/happy_monkey"
+        android:text="Hometown:"
+        android:textAlignment="textEnd"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/profileViewTitleLabelEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/happy_monkey"
+        android:text="Your Profile"
+        android:textAlignment="center"
+        android:textColor="#323536"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/profileViewEditErrorMessage"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/happy_monkey"
+        android:text=""
+        android:layout_gravity="right|bottom"
+        android:layout_marginBottom="3dp"
+        android:layout_marginRight="10dp"
+        android:background="#70FFFFFF"
+        android:textAlignment="center"
+        android:textColor="#323536"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:visibility="invisible"/>
+
+    <ImageButton
+        android:id="@+id/profileEditCancelButtonEdit"
+        android:layout_width="42dp"
+        android:layout_height="39dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginLeft="21dp"
+        android:background="@drawable/profile_open_edit_button_cancel"
+        app:srcCompat="@drawable/cancel" />
+
+    <ImageButton
+        android:id="@+id/profileEditConfirmButtonEdit"
+        android:layout_width="42dp"
+        android:layout_height="39dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginRight="21dp"
+        android:background="@drawable/profile_open_edit_button_confirm"
+        app:srcCompat="@drawable/confirm" />
+
+</FrameLayout>

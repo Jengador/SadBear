@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainframebackground"
+    tools:context=".concierge.ConciergeDeliveryActivity">
+
+    <FrameLayout
+        android:id="@+id/conciergeDeliveryFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/conciergeNavigation"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="0dp">
+
+        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/addProductLayout"
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/profile_open_view_border"
+            >
+
+            <TextView
+                android:id="@+id/addProductTitleLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/happy_monkey"
+                android:text="Add New Product"
+                android:textAlignment="center"
+                android:textColor="#323536"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/addProductProductNameLabel"
+                android:layout_width="160dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="60dp"
+                android:fontFamily="@font/happy_monkey"
+                android:text="Product Name:"
+                android:textAlignment="textEnd"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/addProductProductNameEdit"
+                android:paddingTop="8dp"
+                android:paddingBottom="5dp"
+                android:layout_marginLeft="180dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="60dp"
+                android:layout_width="180dp"
+                android:justificationMode="inter_word"
+                android:inputType="textMultiLine"
+                android:layout_height="55dp"
+                android:textColor="#000000"
+                android:text=""
+                android:maxLength="60"
+                android:minLines="2"
+                android:lines="2"
+                android:maxLines="2"
+                android:textSize="15dp"
+                android:fontFamily="@font/happy_monkey"
+                android:textAlignment="textEnd"
+                android:lineSpacingExtra="4dp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/addProductProductBrandLabel"
+                android:layout_width="160dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="130dp"
+                android:fontFamily="@font/happy_monkey"
+                android:text="Product Brand:"
+                android:textAlignment="textEnd"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/addProductProductBrandEdit"
+                android:paddingTop="8dp"
+                android:paddingBottom="5dp"
+                android:layout_marginLeft="180dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="130dp"
+                android:layout_width="180dp"
+                android:justificationMode="inter_word"
+                android:inputType="textMultiLine"
+                android:layout_height="55dp"
+                android:textColor="#000000"
+                android:text=""
+                android:maxLength="60"
+                android:minLines="2"
+                android:lines="2"
+                android:maxLines="2"
+                android:textSize="15dp"
+                android:fontFamily="@font/happy_monkey"
+                android:textAlignment="textEnd"
+                android:lineSpacingExtra="4dp"
+                android:textStyle="bold"
+                />
+
+            <Button
+                android:id="@+id/addProductAddButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:text="ADD ITEM"
+                android:layout_marginBottom="25dp"
+                android:textSize="20dp"
+                >
+            </Button>
+
+            <TextView
+                android:id="@+id/addProductMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#D9C5C1C1"
+                android:layout_gravity="center_horizontal|bottom"
+                android:textSize="15dp"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/happy_monkey"
+                android:textAlignment="center"
+                android:layout_marginBottom="5dp"
+                android:lineSpacingExtra="4dp"
+                android:textStyle="bold"
+                />
+
+        </FrameLayout>
+
+
+
+        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/deleteProductLayout"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="330dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/profile_open_view_border"
+            >
+
+            <TextView
+                android:id="@+id/deleteProductTitleLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/happy_monkey"
+                android:text="Remove Product from List"
+                android:textAlignment="center"
+                android:textColor="#323536"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/deleteProductProductNameLabel"
+                android:layout_width="160dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="60dp"
+                android:fontFamily="@font/happy_monkey"
+                android:text="Product Name:"
+                android:textAlignment="textEnd"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/deleteProductNameSpinner"
+                android:layout_width="180dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="180dp"
+                android:layout_marginTop="60dp"
+                android:fontFamily="@font/happy_monkey"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:textAlignment="textStart"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/deleteProductProductBrandLabel"
+                android:layout_width="160dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="100dp"
+                android:fontFamily="@font/happy_monkey"
+                android:text="Product Brand:"
+                android:textAlignment="textEnd"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/deleteProductBrandSpinner"
+                android:layout_width="180dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="180dp"
+                android:layout_marginTop="100dp"
+                android:fontFamily="@font/happy_monkey"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:textAlignment="textStart"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <Button
+                android:id="@+id/deleteProductRemoveButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:text="REMOVE ITEM"
+                android:layout_marginBottom="25dp"
+                android:textSize="20dp"
+                >
+            </Button>
+
+            <TextView
+                android:id="@+id/deleteProductMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#D9C5C1C1"
+                android:layout_gravity="center_horizontal|bottom"
+                android:textSize="15dp"
+                android:text=""
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/happy_monkey"
+                android:textAlignment="center"
+                android:layout_marginBottom="5dp"
+                android:lineSpacingExtra="4dp"
+                android:textStyle="bold"
+                />
+
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/conciergeNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="0dp"
+        android:background="#88D16F6F"
+        app:menu="@menu/navigation_bar" />
+
+
+
+</RelativeLayout>
